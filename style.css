@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --background-color: #a99fe2;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  
+}
+
+#main {
+  display: grid;
+  grid-template-rows: 2.5fr 0.7fr 0.5fr 1fr 0.7fr 0.7fr;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin: 4rem auto; 
+  background-color: #fff;
+  width: 25rem;
+  border-radius: 1rem;
+  box-shadow: #00000067 0px 8px 24px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.info {
+  margin-left: 1rem;
+  max-width: 34ch;
+  color: var(--desaturated-blue);
+  margin-bottom: 1rem; 
+}
+
+.payment {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  margin: 0 2.5rem;
+  margin-bottom: 1.75rem;
+  border-radius: 10%;
+  background-color: var(--very-pale-blue);
+  padding: 10px;
+}
+
+.pay {
+  display: flex;
+  flex-direction: column;
+  justify-self: left;
+}
+
+.annual {
+  font-weight: 900;
+}
+
+.money {
+  color: var(--desaturated-blue);
+}
+
+.plan {
+  font-weight: 700;
+}
+
+.plan:visited,
+.plan:active {
+  color: var(--bright-blue);
+}
+
+.plan:hover {
+  color: #3829e096;
+  text-decoration: none;
+}
+
+.btn {
+  margin: 0 1.875rem;
+  width: 21.25rem;
+  height: 2.5rem;
+  background: unset;
+}
+
+.proceed {
+  background-color: var(--bright-blue);
+  color: #fff;
+  border: unset;
+  border-radius: 10px;
+  box-shadow: 0 6.5px 20px rgba(0, 0, 0, 0.39);
+}
+
+.proceed:hover {
+  cursor: pointer;
+  background-color: #3829e0de;
+}
+
+.cancel {
+  color: var(--desaturated-blue);
+  border: unset;
+  font-weight: 700;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: #000;
+}
